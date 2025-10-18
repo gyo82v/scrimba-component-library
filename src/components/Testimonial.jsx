@@ -4,13 +4,13 @@ import { FaHome } from "react-icons/fa"
 export default function Testimonial({photo, name, title, children}){
     const container = `shadow-lg p-3 font-semibold relative flex flex-col max-w-160
                       ${photo ? `bg-blue-500 text-neutral-50 pt-28 pb-8 
-                                  md:flex-row md:gap-4 md:pt-8` :
+                                  md:flex-row md:gap-4 md:pt-8 md:items-center` :
                                  `bg-neutral-200 py-10 md:items-center`
                         }`
-    const img = `rounded-xl w-11/12 absolute -top-15 h-34  md:-top-5 md:h-50
+    const img = `rounded-xl w-11/12 absolute -top-15 md:static h-34  md:top-auto md:h-50
                  md:w-60 `
     const div = `flex items-center gap-1 mb-4 mx-auto md:mb-6`
-    const section = `flex flex-col ${photo ? `` : `md:items-center`}`
+    const section = `flex flex-col ${photo ? `md:gap-4` : `md:items-center`}`
     const pChildren = `${photo ? "" : "md:text-center md:w-8/12"}`
     const div2 = `text-sm mt-4 ${photo ? `` : `md:flex gap-2 md:mx-auto md:mt-6 `} `
     const ptitle = `${photo ? "text-neutral-200" : "text-neutral-400"}`
