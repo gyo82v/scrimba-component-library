@@ -10,19 +10,35 @@ export default function Popup(){
             <section className={section}>
                 <h2 className={h2}>Lightmode:</h2>
                 <section className={sectionToasts}>
-                    <PopupEl></PopupEl>
-                    <PopupEl></PopupEl>
-                    <PopupEl></PopupEl>
-                    <PopupEl></PopupEl>
+                    <PopupEl variant="success" title="Success">
+                        Your work has been saved.
+                    </PopupEl>
+                    <PopupEl variant="warning" title="Warning">
+                        A network error was detected.
+                    </PopupEl>
+                    <PopupEl  title="Information">
+                        Please read updated information.
+                    </PopupEl>
+                    <PopupEl variant="error" title="Error">
+                        Please re-save your work again.
+                    </PopupEl>
                 </section>
             </section>
             <section className={section}>
                 <h2 className={h2}>Darkmode:</h2>
                 <section className={sectionToasts}>
-                    <PopupEl></PopupEl>
-                    <PopupEl></PopupEl>
-                    <PopupEl></PopupEl>
-                    <PopupEl></PopupEl>
+                    <PopupEl variant="success" title="Success" darkmode>
+                        Your work has been saved.
+                    </PopupEl>
+                    <PopupEl variant="warning" title="Warning" darkmode>
+                        A network error was detected.
+                    </PopupEl>
+                    <PopupEl title="Information" darkmode>
+                        Please read updated information.
+                    </PopupEl>
+                    <PopupEl variant="error" title="Error" darkmode>
+                        Please re-save your work again
+                    </PopupEl>
                 </section>
             </section>
         </section>
