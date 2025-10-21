@@ -10,16 +10,16 @@ export default function Tooltips(){
             <section className={section}>
                 <h2 className={h2}>lightmode:</h2>
                 <section className={sectionTools}>
-                    <Tooltip title="Archive notes">
+                    <Tooltip title="Archive notes" open>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
                     </Tooltip>
-                    <Tooltip title="Archive notes" variant="blue">
+                    <Tooltip title="Archive notes" variant="blue" open>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
                     </Tooltip>
-                    <Tooltip title="Archive notes" variant="purple">
+                    <Tooltip title="Archive notes" variant="purple" open>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
                     </Tooltip>
-                    <Tooltip title="Archive notes" variant="green">
+                    <Tooltip title="Archive notes" variant="green" open>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
                     </Tooltip>
                 </section>
@@ -27,16 +27,16 @@ export default function Tooltips(){
             <section className={section}>
                 <h2 className={h2}>Darkmode:</h2>
                 <section className={sectionTools}>
-                <Tooltip title="Archive notes" darkmode>
+                <Tooltip title="Archive notes" darkmode open>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
                 </Tooltip>
-                <Tooltip title="Archive notes" variant="blue" darkmode>
+                <Tooltip title="Archive notes" variant="blue" darkmode open>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
                 </Tooltip>
-                <Tooltip title="Archive notes" variant="purple" darkmode>
+                <Tooltip title="Archive notes" variant="purple" darkmode open>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
                 </Tooltip>
-                <Tooltip title="Archive notes" variant="green" darkmode>
+                <Tooltip title="Archive notes" variant="green" darkmode open>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
                 </Tooltip>
                 </section>
