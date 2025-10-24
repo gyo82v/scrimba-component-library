@@ -1,4 +1,4 @@
-import PopupEl from "../components/layout/PopupEl"
+import PopupEl from "../components/PopupEl"
 
 export default function Popup(){
     const container = `flex flex-col items-center gap-6 mt-6 px-4 lg:flex-row lg:justify-center lg:mt-10`
