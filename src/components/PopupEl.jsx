@@ -1,4 +1,6 @@
 import {AiOutlineCheckCircle, AiOutlineWarning, AiOutlineCloseCircle, AiOutlineInfoCircle,} from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
+
 
 export default function PopupEl({variant = "info", title, darkmode = false, position, children}){
 
@@ -15,11 +17,20 @@ export default function PopupEl({variant = "info", title, darkmode = false, posi
         warning : `from-yellow-700 to-yellow-600 text-yellow-100`,
         error : `from-red-700 to-red-600 text-red-100`
     }
+    const closeIconVariants = {
+        info : "text-sky-700 border-sky-700",
+        success : "text-green-700 border-green-700",
+        warning : "text-yellow-700 border-yellow-700",
+        error : "text-red-700 border-red-700"
+    }
 
-    const container = ` bg-gradient-to-br flex gap-2 p-4 rounded-lg min-w-90
+    const container = ` bg-gradient-to-br flex gap-2 p-4 rounded-lg min-w-90 relative
                        ${!darkmode ? variants[variant] : darkVariants[variant]}
                        ${position || ""}`
     const icon = `mt-1 h-5 w-5`
+    const closeIcon = `h-4 w-4`
+    const btnClose = `absolute -right-2 -top-2 rounded-full border-1
+                      ${closeIconVariants[variant]} `
 
     const iconType  = variant === "success" ? <AiOutlineCheckCircle className={icon} /> :
                       variant === "warning" ? <AiOutlineWarning className={icon} /> :
@@ -33,6 +44,9 @@ export default function PopupEl({variant = "info", title, darkmode = false, posi
                 <p className="font-bold">{title}</p>
                 <p>{children}</p>
             </div>
+            <button className={btnClose}>
+                <AiOutlineClose className={closeIcon} />
+            </button>
         </section>
     )
 }
