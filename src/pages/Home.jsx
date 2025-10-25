@@ -28,19 +28,19 @@ export default function Home(){
                 <button onClick={() => handlePopup("center")}>Activate center popup</button>
                 {
                     isPopup.top &&
-                    <PopupEl variant="success" title="test" position="absolute top-0">
+                    <PopupEl variant="success" title="test" position="absolute top-0" setOpen={() => handlePopup("top")}>
                       This is a test popup
                     </PopupEl>
                 }
                 {
                      isPopup.bottom &&
-                    <PopupEl variant="warning" title="test" position="absolute bottom-0">
+                    <PopupEl variant="warning" title="test" position="absolute bottom-0" setOpen={() => handlePopup("bottom")}>
                       This is a test popup
                     </PopupEl>
                 }
                 {
                      isPopup.center &&
-                    <PopupEl  title="test" position="fixed inset-40 bg-black/50">
+                    <PopupEl  title="test" position="fixed inset-40 " setOpen={() => handlePopup("center")}>
                       This is a test popup
                     </PopupEl>
                 }
