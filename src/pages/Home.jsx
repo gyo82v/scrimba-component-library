@@ -9,9 +9,8 @@ import PopupEl from "../components/PopupEl"
 export default function Home(){
     const [isPopup, setIsPopup] = useState({top : false, bottom : false, center : false})
 
-    const handlePopup = v => (
-        setIsPopup(p => ({...p, [v] : !p[v]}))
-    )
+    const handlePopup = v => setIsPopup(p => ({...p, [v] : !p[v]}))
+    
     return(
         <section>
             <h2>Components test:</h2>
