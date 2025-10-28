@@ -29,7 +29,7 @@ export default function PopupEl({variant = "info", title, darkmode = false, posi
                        ${position || ""}`
     const icon = `mt-1 h-5 w-5`
     const closeIcon = `h-4 w-4`
-    const btnClose = `absolute right-2 top-2 rounded-full border-1
+    const btnClose = `absolute right-2 top-2 rounded-full border
                       ${closeIconVariants[variant]} `
 
     const iconType  = variant === "success" ? <AiOutlineCheckCircle className={icon} /> :
