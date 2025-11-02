@@ -18,6 +18,7 @@ export default function Home(){
             <h2>Components test:</h2>
             <section>
                 <h3>Badge:</h3>
+                <Badge>hello</Badge>
             </section>
             <section>
                 <h3>Banner:</h3>
